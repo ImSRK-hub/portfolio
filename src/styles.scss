@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@mixin respond-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+body {
+	margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: calibri;
+    font-size: 1em;
+}
+
+@include respond-md(){
+    a{
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,19 @@
+@import '../../styles.scss';
+
+.header{
+    margin-right: 6%;
+}
+
+@include respond-md(){
+    .header{
+        width: 53%;
+        float: right;
+    }
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+

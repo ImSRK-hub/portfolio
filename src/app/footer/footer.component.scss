@@ -1,0 +1,22 @@
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    width: 96vw;
+    margin-left: -2%;
+}
+
+.name{
+    color: #FFF;
+    font-family: calibri;
+}
+
+.footer-list-item{
+    color: #FFF;
+    list-style: none;
+    a{
+        color: #FFF;
+        font-size: 16px;
+    }
+}

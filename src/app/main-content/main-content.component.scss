@@ -1,0 +1,17 @@
+.main {
+  width: 100%;
+  min-height: 85vh; // or use 100vh for full viewport height
+  background-image: url("../../assets/PortfolioImage.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+@media (max-width: 600px) {
+  .main {
+    min-height: 84vh;
+    background-size: cover;
+    background-position-x: 66%;
+  }
+}

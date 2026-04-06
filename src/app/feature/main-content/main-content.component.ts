@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-content',
@@ -9,4 +10,13 @@ import { Component } from '@angular/core';
 })
 export class MainContentComponent {
 
+  constructor(private router: Router){}
+
+  routeTo(tab :string){
+    switch (tab) {
+      case 'resume': 
+      this.router.navigateByUrl("/resume");
+      break;
+    };
+  }
 }

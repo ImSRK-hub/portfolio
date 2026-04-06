@@ -1,0 +1,17 @@
+<mat-accordion>
+    @for (content of resumeContents; track $index) {
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h5>{{content.title}}</h5>
+            </mat-panel-title>
+            @if (content.panelDesc) {
+            <mat-panel-description>{{content.panelDesc}}</mat-panel-description>
+            }
+        </mat-expansion-panel-header>
+        @if (content.contentDesc) {
+        <p>{{content.contentDesc}}</p>
+        }
+    </mat-expansion-panel>
+    }
+</mat-accordion>

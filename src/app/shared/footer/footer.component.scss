@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     padding: 2%;
-    width: 96vw;
+    width: 100vw;
     margin-left: -2%;
 }
 
@@ -19,4 +19,8 @@
         color: #FFF;
         font-size: 16px;
     }
+}
+
+#mail{
+    cursor: pointer;
 }
